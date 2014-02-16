@@ -1,0 +1,46 @@
+<dictionary>
+  <alphabet/>
+  <sdefs>
+    <sdef n="n"       c=""/>
+    <sdef n="prn"       c=""/>
+    <sdef n="v"       c=""/>
+    <sdef n="adv"       c=""/>
+    <sdef n="adj"       c=""/>
+    <sdef n="cop"       c=""/>
+
+    <sdef n="tv"       c=""/>
+    <sdef n="ref"       c=""/>
+
+    <sdef n="cm"       c=""/>
+    <sdef n="sent"       c=""/>
+  </sdefs>
+  <section id="main" type="standard">
+
+    <!-- РАЗДЕЛ: -->
+
+    <e><p><l>е<s n="cop"/></l><r>э<s n="cop"/></r></p></e>
+
+    <!-- РАЗДЕЛ: -->
+
+    <e><p><l>өз<s n="prn"/><s n="ref"/></l><r>оьз<s n="prn"/><s n="ref"/></r></p></e>
+
+    <!-- РАЗДЕЛ: -->
+
+    <e><p><l>құдай<s n="n"/></l><r>аллагъ<s n="n"/></r></p></e>
+
+    <!-- РАЗДЕЛ: -->
+
+    <e><p><l>жақсы<s n="adj"/></l><r>яхшы<s n="adj"/></r></p></e>
+
+    <!-- РАЗДЕЛ: -->
+
+    <e><p><l>өт<s n="adv"/></l><r>бек<s n="adv"/></r></p></e>
+
+    <!-- РАЗДЕЛ: -->
+
+    <e><p><l>жарат<s n="v"/><s n="tv"/></l><r>ярат<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>көр<s n="v"/><s n="tv"/></l><r>гёр<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>қара<s n="v"/><s n="tv"/></l><r>къара<s n="v"/><s n="tv"/></r></p></e>
+
+  </section>
+</dictionary>
