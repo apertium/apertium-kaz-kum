@@ -1,0 +1,5 @@
+<rules>
+  <rule>
+    <match lemma="аспан" tags="n.*"><select lemma="кёк" tags="n.*"/></match>
+  </rule>
+</rules>
