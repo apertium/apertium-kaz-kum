@@ -5,6 +5,7 @@
     <sdef n="prn"       c=""/>
     <sdef n="num"       c=""/>
     <sdef n="v"       c=""/>
+    <sdef n="vaux"       c=""/>
     <sdef n="adv"       c=""/>
     <sdef n="post"       c=""/>
     <sdef n="cnjcoo"       c=""/>
@@ -18,6 +19,7 @@
     <sdef n="ref"       c=""/>
     <sdef n="dem"       c=""/>
     <sdef n="pers"       c=""/>
+    <sdef n="itg"       c=""/>
     <sdef n="qnt"       c=""/>
 
     <sdef n="cm"       c=""/>
@@ -40,6 +42,7 @@
 
     <!-- РАЗДЕЛ: Местоимения -->
 
+    <e><p><l>мен<s n="prn"/><s n="pers"/></l><r>мен<s n="prn"/><s n="pers"/></r></p></e>
     <e><p><l>сен<s n="prn"/><s n="pers"/></l><r>сен<s n="prn"/><s n="pers"/></r></p></e>
 
     <e><p><l>бұл<s n="prn"/><s n="dem"/></l><r>бу<s n="prn"/><s n="dem"/></r></p></e>
@@ -48,6 +51,8 @@
     <e><p><l>өз<s n="prn"/><s n="ref"/></l><r>оьз<s n="prn"/><s n="ref"/></r></p></e>
 
     <e><p><l>бәрі<s n="prn"/><s n="qnt"/></l><r>зат<s n="n"/></r></p></e> <!-- FIXME -->
+
+    <e><p><l>не<s n="prn"/><s n="itg"/></l><r>не<s n="prn"/><s n="itg"/></r></p></e>
 
     <!-- РАЗДЕЛ: -->
 
@@ -64,7 +69,8 @@
     <e><p><l>жарық<s n="n"/></l><r>ярыкъ<s n="n"/></r></p></e>
     <e><p><l>су<s n="n"/></l><r>сув<s n="n"/></r></p></e>
     <e><p><l>дәріхана<s n="n"/></l><r>аптек<s n="n"/></r></p></e>
-    <e><p><l>@<s n="n"/></l><r>къабур<s n="n"/></r></p></e>
+    <e><p><l>аптека<s n="n"/></l><r>аптек<s n="n"/></r></p></e>
+    <e><p><l>зират<s n="n"/></l><r>къабур<s n="n"/></r></p></e>
 
     <!-- РАЗДЕЛ: -->
 
@@ -79,17 +85,27 @@
     <!-- РАЗДЕЛ: -->
 
     <e><p><l>бол<s n="v"/><s n="iv"/></l><r>бол<s n="v"/><s n="iv"/></r></p></e>
+
     <e><p><l>тұр<s n="v"/><s n="iv"/></l><r>тур<s n="v"/><s n="iv"/></r></p></e>
+    <e r="LR"><p><l>жат<s n="vaux"/></l><r></r></p></e>
+
     <e r="LR"><p><l>пайда<b/>бол<s n="v"/><s n="iv"/></l><r>бол<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>жат<s n="v"/><s n="iv"/></l><r>ят<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>жарат<s n="v"/><s n="tv"/></l><r>ярат<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>көр<s n="v"/><s n="tv"/></l><r>гёр<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>де<s n="v"/><s n="tv"/></l><r>де<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>қара<s n="v"/><s n="tv"/></l><r>къара<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>бұйыр<s n="v"/><s n="tv"/></l><r>буюр<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>сұра<s n="v"/><s n="tv"/></l><r>сора<s n="v"/><s n="tv"/></r></p></e>
-    <e><p><l>ауыр<s n="v"/><s n="iv"/></l><r>авру<s n="v"/><s n="tv"/></r></p></e>
-    <e><p><l>кел<s n="v"/><s n="iv"/></l><r>гел<s n="v"/><s n="tv"/></r></p></e>
-    <e><p><l>шық<s n="v"/><s n="iv"/></l><r>чыкъ<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>ойла<s n="v"/><s n="tv"/></l><r>ойла<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>ауыр<s n="v"/><s n="iv"/></l><r>авру<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>кел<s n="v"/><s n="iv"/></l><r>гел<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>шық<s n="v"/><s n="iv"/></l><r>чыкъ<s n="v"/><s n="iv"/></r></p></e>
+
+    <!-- РАЗДЕЛ: -->
+
+    <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
+    <e><re>[.\?;:!"]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
 
   </section>
 </dictionary>

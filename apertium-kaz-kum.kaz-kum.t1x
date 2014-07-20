@@ -3,6 +3,14 @@
 <transfer>
   <section-def-cats>
     
+    <def-cat n="gna-perf">
+      <cat-item tags="v.*.prc_perf"/>
+    </def-cat>
+
+    <def-cat n="vaux-žat">
+      <cat-item lemma="жат" tags="vaux.*"/>
+    </def-cat>
+
     <def-cat n="nom">
       <cat-item tags="n"/>
       <cat-item tags="n.*"/>
@@ -35,6 +43,15 @@
       <attr-item tags="ND"/>
     </def-attr>
        
+    <def-attr n="a_fin">
+      <attr-item tags="pres"/>
+      <attr-item tags="aor"/>
+    </def-attr>
+
+    <def-attr n="a_prc">
+      <attr-item tags="prc_perf"/>
+    </def-attr>
+
     <def-attr n="a_nom">
       <attr-item tags="n"/>
     </def-attr>
@@ -59,6 +76,45 @@
         </out>
       </action>
     </rule>
-    
+
+    <rule comment="vaux-žat"> 
+      <pattern>
+        <pattern-item n="vaux-žat"/>
+      </pattern>
+      <action>
+        <let><clip pos="1" side="tl" part="a_fin"/><lit-tag v="aor"/></let>
+        <out>
+          <lu>
+            <lit v="ят"/><lit-tag v="v.iv"/>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+
+<!--
+    <rule comment="gna-perf vaux-žat"> 
+      <pattern>
+        <pattern-item n="gna-perf"/>
+        <pattern-item n="vaux-žat"/>
+      </pattern>
+      <action>
+      <let><clip pos="2" side="tl" part="a_fin"/><lit-tag v="aor"/></let>
+      <choose>
+        <when>
+          <test><equal><clip pos="1" side="sl" part="a_prc"/><lit-tag v="prc_perf"/></equal></test>
+          <let><clip pos="1" side="tl" part="a_prc"/><concat><clip pos="2" side="tl" part="tags"/></concat></let>
+        </when> 
+        
+      </choose>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+-->     
   </section-rules>
 </transfer>

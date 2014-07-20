@@ -12,3 +12,5 @@
 /autogen.sh -text
 /configure.ac -text
 /modes.xml -text
+texts/anekdot.kaz.txt -text svneol=unset#application/octet-stream
+texts/anekdot.kum.txt -text svneol=unset#application/octet-stream
