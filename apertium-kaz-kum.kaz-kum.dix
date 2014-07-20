@@ -7,7 +7,9 @@
     <sdef n="v"       c=""/>
     <sdef n="vaux"       c=""/>
     <sdef n="np"       c=""/>
+    <sdef n="postadv"       c=""/>
     <sdef n="det"       c=""/>
+    <sdef n="emph"       c=""/>
     <sdef n="adv"       c=""/>
     <sdef n="post"       c=""/>
     <sdef n="ij"       c=""/>
@@ -15,7 +17,10 @@
     <sdef n="cnjadv"       c=""/>
     <sdef n="adj"       c=""/>
     <sdef n="cop"       c=""/>
+    <sdef n="mod"       c=""/>
     <sdef n="qst"       c=""/>
+
+    <sdef n="advl"       c=""/>
 
     <sdef n="pl"       c=""/>
 
@@ -28,6 +33,7 @@
     <sdef n="f"       c=""/>
 
     <sdef n="ref"       c=""/>
+    <sdef n="coll"       c=""/>
     <sdef n="dem"       c=""/>
     <sdef n="neg"       c=""/>
     <sdef n="pers"       c=""/>
@@ -44,6 +50,9 @@
 
     <e><p><l>ма<s n="qst"/></l><r>мы<s n="qst"/></r></p></e>
     <e><p><l>е<s n="cop"/></l><r>э<s n="cop"/></r></p></e>
+    <e><p><l>да<s n="postadv"/></l><r>да<s n="postadv"/></r></p></e>
+    <e><p><l>шығар<s n="mod"/></l><r>бугъай<s n="mod"/></r></p></e> <!-- FIXME -->
+    <e><p><l>шы<s n="emph"/></l><r>чы<s n="emph"/></r></p></e> <!-- FIXME -->
 
     <!-- РАЗДЕЛ: Союзы -->
 
@@ -80,11 +89,13 @@
 
     <e><p><l>өз<s n="det"/><s n="ref"/></l><r>оьз<s n="det"/><s n="ref"/></r></p></e>
     <e><p><l>қай<s n="det"/><s n="itg"/></l><r>къай<s n="det"/><s n="itg"/></r></p></e>
+    <e><p><l>барлық<s n="det"/><s n="qnt"/></l><r>савлай<s n="det"/><s n="qnt"/></r></p></e>
 
     <!-- РАЗДЕЛ: -->
 
     <e><p><l>бір<s n="num"/></l><r>бир<s n="num"/></r></p></e>
     <e><p><l>екі<s n="num"/></l><r>эки<s n="num"/></r></p></e>
+    <e r="LR"><p><l>екі<s n="num"/><s n="coll"/></l><r>эки<s n="num"/></r></p></e>
     <e><p><l>бес<s n="num"/></l><r>беш<s n="num"/></r></p></e>
     <e><p><l>алты<s n="num"/></l><r>алты<s n="num"/></r></p></e>
 
@@ -408,6 +419,7 @@
     <e><p><l>қол<s n="n"/></l><r>къол<s n="n"/></r></p></e>
     <e><p><l>көз<s n="n"/></l><r>гёз<s n="n"/></r></p></e>
     <e><p><l>құс<s n="n"/></l><r>къуш<s n="n"/></r></p></e>
+    <e><p><l>қыз<s n="n"/></l><r>къыз<s n="n"/></r></p></e>
 
 
     <!-- РАЗДЕЛ: -->
@@ -419,6 +431,9 @@
 
     <e><p><l>жоқ<s n="adj"/></l><r>ёкъ<s n="adj"/></r></p></e>
     <e><p><l>бар<s n="adj"/></l><r>бар<s n="adj"/></r></p></e>
+
+    <e><p><l>мүмкін<s n="adj"/></l><r>ярай<s n="adj"/></r></p></e>
+    <e><p><l>керек<s n="adj"/></l><r>герек<s n="adj"/></r></p></e>
 
     <e><p><l>жақсы<s n="adj"/></l><r>яхшы<s n="adj"/></r></p></e>
     <e><p><l>соң<s n="adj"/></l><r>геч<s n="adj"/></r></p></e>
@@ -434,6 +449,10 @@
     <e><p><l>қуанышты<s n="adj"/></l><r>шат<s n="adj"/></r></p></e>
     <e><p><l>қатты<s n="adj"/></l><r>тез<s n="adj"/></r></p></e>
     <e><p><l>жақын<s n="adj"/></l><r>ювукъ<s n="adj"/></r></p></e>
+    <e><p><l>анық<s n="adj"/></l><r>ачыкъ<s n="adj"/></r></p></e>
+    <e><p><l>көңіл<s n="adj"/></l><r>шат<s n="adj"/></r></p></e>
+    <e><p><l>ақырын<s n="adj"/></l><r>аста<s n="adj"/></r></p></e> <!-- FIXME -->
+    <e><p><l>көңілді<s n="adj"/><s n="advl"/></l><r>шат<b/>кюйде<s n="adv"/></r></p></e>
 
     <!-- РАЗДЕЛ: -->
 
@@ -452,6 +471,7 @@
     <e><p><l>әрдайым<s n="adv"/></l><r>гьар<b/>заман<s n="adv"/></r></p></e>
     <e><p><l>қазір<s n="adv"/></l><r>гьали<s n="adv"/></r></p></e>
     <e><p><l>енді<s n="adv"/></l><r>гьали<s n="adv"/></r></p></e>
+    <e><p><l>әлі<s n="adv"/></l><r>гьали<s n="adv"/></r></p></e>
     <e><p><l>қайта<s n="adv"/></l><r>янгыдан<s n="adv"/></r></p></e>
     <e><p><l>қайта<s n="adv"/></l><r>дагъы<b/>да<s n="adv"/></r></p></e>
     <e><p><l>еш<b/>қашан<s n="adv"/></l><r>гьеч<b/>бир<b/>заманда<b/>да<s n="adv"/></r></p></e>
@@ -461,12 +481,18 @@
     <e><p><l>бол<s n="v"/><s n="iv"/></l><r>бол<s n="v"/><s n="iv"/></r></p></e>
 
     <e><p><l>тұр<s n="v"/><s n="iv"/></l><r>тур<s n="v"/><s n="iv"/></r></p></e>
+
     <e r="LR"><p><l>жат<s n="vaux"/></l><r></r></p></e>
+    <e r="LR"><p><l>жүр<s n="vaux"/></l><r>юрю<s n="v"/><s n="iv"/></r></p></e>
+    <e r="LR"><p><l>кел<s n="vaux"/></l><r>сюй<s n="v"/><s n="tv"/></r></p></e>
+    <e r="LR"><p><l>ал<s n="vaux"/></l><r>бол<s n="v"/><s n="iv"/></r></p></e>
 
     <e r="LR"><p><l>пайда<b/>бол<s n="v"/><s n="iv"/></l><r>бол<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>жат<s n="v"/><s n="iv"/></l><r>ят<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>отыр<s n="v"/><s n="iv"/></l><r>олтур<s n="v"/><s n="iv"/></r></p></e>
     <e><p><l>жарат<s n="v"/><s n="tv"/></l><r>ярат<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>көр<s n="v"/><s n="tv"/></l><r>гёр<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>ал<s n="v"/><s n="tv"/></l><r>ал<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>де<s n="v"/><s n="tv"/></l><r>де<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>қара<s n="v"/><s n="tv"/></l><r>къара<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>бұйыр<s n="v"/><s n="tv"/></l><r>буюр<s n="v"/><s n="tv"/></r></p></e>
@@ -500,10 +526,15 @@
     <e><p><l>тыңда<s n="v"/><s n="tv"/></l><r>тынгла<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>же<s n="v"/><s n="tv"/></l><r>аша<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>күл<s n="v"/><s n="iv"/></l><r>кюле<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>жыми<s n="v"/><s n="iv"/></l><r>иржай<s n="v"/><s n="iv"/></r></p></e>
+    <e><p><l>бас<s n="v"/><s n="tv"/></l><r>бас<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>жап<s n="v"/><s n="tv"/></l><r>яп<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>бүйт<s n="v"/><s n="tv"/></l><r>булай<b/>эт<s n="v"/><s n="tv"/></r></p></e>
 
     <!-- РАЗДЕЛ: -->
 
     <e><p><l>жоқ<s n="ij"/></l><r>ёкъ<s n="ij"/></r></p></e>
+    <e><p><l>демек<s n="ij"/></l><r>демек<s n="ij"/></r></p></e>
 
     <!-- РАЗДЕЛ: -->
 

@@ -62,13 +62,8 @@
 
   <section-def-lists>
     <def-list n="kumyk_clitics">
-      <list-item v="shı"/>
       <list-item v="мы"/>
-      <list-item v="meken"/>
-      <list-item v="g'oy"/>
-      <list-item v="-aq"/>
-      <list-item v="g'ana"/>
-      <list-item v="da"/>
+<!--      <list-item v="да"/>-->
     </def-list>
   </section-def-lists>
 
