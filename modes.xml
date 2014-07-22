@@ -12,7 +12,7 @@
       <program name="lt-proc -b">
         <file name="kaz-kum.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="kaz-kum.lrx.bin"/>
       </program>
       <program name="apertium-transfer -b">
@@ -122,7 +122,7 @@
       <program name="lt-proc -b">
         <file name="kaz-kum.autobil.bin"/>
       </program>
-      <program name="lrx-proc -t">
+      <program name="lrx-proc -m -t">
         <file name="kaz-kum.lrx.bin"/>
       </program>
     </pipeline>
@@ -141,7 +141,7 @@
       <program name="lt-proc -b">
         <file name="kaz-kum.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="kaz-kum.lrx.bin"/>
       </program>
       <program name="apertium-transfer -t -b">
@@ -163,7 +163,7 @@
       <program name="lt-proc -b">
         <file name="kaz-kum.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="kaz-kum.lrx.bin"/>
       </program>
       <program name="apertium-transfer -b">
@@ -190,7 +190,7 @@
       <program name="lt-proc -b">
         <file name="kum-kaz.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="kum-kaz.lrx.bin"/>
       </program>
       <program name="apertium-transfer -b">
@@ -297,7 +297,7 @@
       <program name="lt-proc -b">
         <file name="kum-kaz.autobil.bin"/>
       </program>
-      <program name="lrx-proc -t">
+      <program name="lrx-proc -m -t">
         <file name="kum-kaz.lrx.bin"/>
       </program>
     </pipeline>
@@ -316,7 +316,7 @@
       <program name="lt-proc -b">
         <file name="kum-kaz.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="kum-kaz.lrx.bin"/>
       </program>
       <program name="apertium-transfer -t -b">
@@ -338,7 +338,7 @@
       <program name="lt-proc -b">
         <file name="kum-kaz.autobil.bin"/>
       </program>
-      <program name="lrx-proc">
+      <program name="lrx-proc -m">
         <file name="kum-kaz.lrx.bin"/>
       </program>
       <program name="apertium-transfer -b">
