@@ -10,6 +10,7 @@
     <sdef n="postadv"       c=""/>
     <sdef n="det"       c=""/>
     <sdef n="emph"       c=""/>
+    <sdef n="abbr"       c=""/>
     <sdef n="adv"       c=""/>
     <sdef n="post"       c=""/>
     <sdef n="ij"       c=""/>
@@ -30,6 +31,7 @@
 
     <sdef n="ant"       c=""/>
     <sdef n="top"       c=""/>
+    <sdef n="cog"       c=""/>
 
     <sdef n="m"       c=""/>
     <sdef n="f"       c=""/>
@@ -458,6 +460,14 @@
     <e><p><l>балық<s n="n"/></l><r>балыкъ<s n="n"/></r></p></e>
     <e><p><l>кит<s n="n"/></l><r>кит<s n="n"/></r></p></e>
     <e><p><l>тас<s n="n"/></l><r>таш<s n="n"/></r></p></e>
+    <e><p><l>мемлекет<s n="n"/></l><r>мемлекет<s n="n"/></r></p></e>
+    <e><p><l>эволюция<s n="n"/></l><r>эволюция<s n="n"/></r></p></e>
+    <e><p><l>информация<s n="n"/></l><r>информация<s n="n"/></r></p></e>
+    <e><p><l>мәлімет<s n="n"/></l><r>информация<s n="n"/></r></p></e>
+    <e><p><l>күй<s n="n"/></l><r>кюй<s n="n"/></r></p></e>
+    <e><p><l>дәлел<s n="n"/></l><r>исбат<s n="n"/></r></p></e>
+    <e><p><l>дәлел<s n="n"/></l><r>далил<s n="n"/></r></p></e>
+    <e><p><l>бассейн<s n="n"/></l><r>бассейн<s n="n"/></r></p></e>
 
     <e><p><l>олигоцен<s n="n"/></l><r>олигоцен<s n="n"/></r></p></e>
 
@@ -465,13 +475,20 @@
 
     <e><p><l>Арал<s n="np"/><s n="top"/></l><r>Арал<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Каспий<s n="np"/><s n="top"/></l><r>Каспий<s n="np"/><s n="top"/></r></p></e>
+    <e><p><l>Әмудария<s n="np"/><s n="top"/></l><r>Амудария<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Қазақстан<s n="np"/><s n="top"/></l><r>Къазахстан<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Өзбекстан<s n="np"/><s n="top"/></l><r>Оьзбекистан<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Сарышығанақ<s n="np"/><s n="top"/></l><r>Сарышыгъанакъ<s n="np"/><s n="top"/></r></p></e>
     <e><p><l>Ақеспе<s n="np"/><s n="top"/></l><r>Акъеспе<s n="np"/><s n="top"/></r></p></e>
 
     <e><p><l>Азамат<s n="np"/><s n="ant"/><s n="m"/></l><r>Азамат<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+    <e><p><l>Иван<s n="np"/><s n="ant"/><s n="m"/></l><r>Иван<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
     <e><p><l>Айгүл<s n="np"/><s n="ant"/><s n="f"/></l><r>Айгуль<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+
+    <e><p><l>Ибн<b/>Хордадбех<s n="np"/><s n="cog"/></l><r>Ибн<b/>Хордадбех<s n="np"/><s n="cog"/></r></p></e>
+    <e><p><l>Ибн<b/>Руста<s n="np"/><s n="cog"/></l><r>Ибн<b/>Руста<s n="np"/><s n="cog"/></r></p></e>
+    <e><p><l>Әл-Масуди<s n="np"/><s n="cog"/></l><r>Ал-Масуди<s n="np"/><s n="cog"/></r></p></e>
+    <e><p><l>Әл-Истахри<s n="np"/><s n="cog"/></l><r>Ал-Истахри<s n="np"/><s n="cog"/></r></p></e>
 
     <!-- РАЗДЕЛ: -->
 
@@ -497,6 +514,7 @@
     <e><p><l>жақын<s n="adj"/></l><r>ювукъ<s n="adj"/></r></p></e>
     <e><p><l>ірі<s n="adj"/></l><r>уллу<s n="adj"/></r></p></e>
     <e><p><l>қызыл<s n="adj"/></l><r>къызыл<s n="adj"/></r></p></e>
+    <e><p><l>жаңа<s n="adj"/></l><r>янгы<s n="adj"/></r></p></e>
     <e><p><l>анық<s n="adj"/></l><r>ачыкъ<s n="adj"/></r></p></e>
     <e><p><l>көңіл<s n="adj"/></l><r>шат<s n="adj"/></r></p></e>
     <e><p><l>ақырын<s n="adj"/></l><r>аста<s n="adj"/></r></p></e> <!-- FIXME -->
@@ -585,6 +603,11 @@
     <e><p><l>жап<s n="v"/><s n="tv"/></l><r>яп<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>қос<s n="v"/><s n="tv"/></l><r>къош<s n="v"/><s n="tv"/></r></p></e>
     <e><p><l>бүйт<s n="v"/><s n="tv"/></l><r>булай<b/>эт<s n="v"/><s n="tv"/></r></p></e>
+    <e><p><l>көрсет<s n="v"/><s n="tv"/></l><r>гёрсет<s n="v"/><s n="tv"/></r></p></e>
+
+    <!-- РАЗДЕЛ: -->
+
+    <e><p><l>млн.<s n="abbr"/></l><r>млн.<s n="abbr"/></r></p></e>
 
     <!-- РАЗДЕЛ: -->
 
@@ -595,6 +618,11 @@
 
     <e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
     <e><re>[.\?;:!"]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+
+    <!--<e><re>[№%]?[0-9]+([.,][0-9]+)*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>-->
+    <!-- This is a hack. At the moment the numeral lexicon will not generate zeros after commas -->
+    <e><re>[№%]?[0-9]+([.,][1-9]+|[,.][0-9]+[1-9])*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e>
+
 
   </section>
 </dictionary>
