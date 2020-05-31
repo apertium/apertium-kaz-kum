@@ -2,7 +2,6 @@
 ## Makefile for Kazakh--Kumyk
 ###############################################################################
 
-VERSION=0.2.0
 LANG1=kaz
 LANG2=kum
 PREFIX1=$(LANG1)-$(LANG2)
@@ -15,12 +14,14 @@ TARGETS_COMMON = $(PREFIX1).autobil.bin $(PREFIX2).autobil.bin \
         $(PREFIX1).rlx.bin $(PREFIX2).rlx.bin \
         $(PREFIX1).lrx.bin 
 
+@ap_include@
+
 #$(PREFIX2).lrx.bin
 #	$(PREFIX2).automorf.bin $(PREFIX2).autopgen.bin $(PREFIX2).autogen.bin $(PREFIX2).t1x.bin $(PREFIX2).t2x.bin 
 
 # Use this goal for creating .deps, otherwise make -j2 will give problems:
 .deps/.d:
-	if [ ! -d .deps ]; then mkdir .deps; fi
+	if [ ! -d .deps ]; then $(MKDIR_P) .deps; fi
 	touch $@
 
 # Prevent the .d file from being removed automatically:
@@ -137,16 +138,6 @@ $(PREFIX2).autopgen.bin: $(AP_SRC2)/apertium-$(LANG2).post-$(LANG2).dix
 	apertium-validate-dictionary $< 
 	lt-comp lr $< $@
 
-###############################################################################
-## Translation modes
-###############################################################################
-
-# All modes are created by this one goal
-modes/$(PREFIX1).mode: modes.xml
-	apertium-validate-modes modes.xml
-	apertium-gen-modes modes.xml
-	cp *.mode modes/
-
 EXTRA_DIST=$(BASENAME).$(PREFIX1).lrx \
            $(BASENAME).$(PREFIX1).dix \
            $(BASENAME).post-$(LANG1).dix \
@@ -160,7 +151,6 @@ EXTRA_DIST=$(BASENAME).$(PREFIX1).lrx \
 
 #$(PREFIX1).prob $(PREFIX2).prob 
 
-apertium_kaz_kummodesdir=$(prefix)/share/apertium/modes/
 apertium_kaz_kumdir=$(prefix)/share/apertium/$(BASENAME)/
 
 # $(PREFIX1).prob $(PREFIX2).prob 
@@ -172,20 +162,10 @@ apertium_kaz_kum_DATA=$(TARGETS_COMMON) \
 noinst_DATA=modes/$(PREFIX1).mode
 
 
-install-data-local:
-	mv modes modes.bak
-	$(prefix)/bin/apertium-gen-modes modes.xml $(BASENAME)
-	rm -rf modes
-	mv modes.bak modes
-	test -d $(DESTDIR)$(apertium_kaz_kummodesdir) || mkdir $(DESTDIR)$(apertium_kaz_kummodesdir)
-	modes=`xmllint --xpath '//mode[@install="yes"]/@name' modes.xml | sed 's/ *name="\([^"]*\)"/\1.mode /g'`; \
-		$(INSTALL_DATA) $$modes $(DESTDIR)$(apertium_modesdir); \
-		rm $$modes
+install-data-local: install-modes
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t1x $(DESTDIR)$(apertium_kaz_kumdir)
 	$(INSTALL_DATA) $(BASENAME).$(PREFIX1).t2x $(DESTDIR)$(apertium_kaz_kumdir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t1x $(DESTDIR)$(apertium_kaz_kumdir)
-	$(INSTALL_DATA) $(BASENAME).$(PREFIX2).t2x $(DESTDIR)$(apertium_kaz_kumdir)
 
 CLEANFILES = $(TARGETS_COMMON)
-clean-local: 
-	-rm -rf .deps modes
+clean-local:
+	-rm -rf .deps
